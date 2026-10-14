@@ -14,6 +14,8 @@ Scope: T5 aspirational visual target; all required T1–T5 budgets unmeasured.
 - ENGINE/CI: five read-only host-inventory tests pass; portable CI workflow added. This Linux host has no configured UE.
 - ART/QA: seven Batch 02 previews delivered to Drive; all seven GLBs validate; seven review-browser checks pass. World capture defect fixed. H7 review pending.
 - LEGAL: no third-party art imported; owner-side Epic/Fab/MetaHuman access remains unverified.
+- PIPELINE RESEARCH: reviewed official Higgsfield, MetaHuman, Meshy, Tripo and Marble documentation. See `docs/reports/GENERATION_PLATFORM_AUDIT.md`. Connector lookups for Higgsfield/ChatGPT/Meshy/Tripo/World Labs returned unsupported here; no authenticated generation or paid trial occurred.
+- Research access is not editor/API access: web tools retrieved official documentation, but no production engine or third-party generation account was connected.
 
 ## Evidence boundaries
 - `docs/evidence/M0-v3/preflight.json`: actual host inventory; BLOCKED is expected here.
