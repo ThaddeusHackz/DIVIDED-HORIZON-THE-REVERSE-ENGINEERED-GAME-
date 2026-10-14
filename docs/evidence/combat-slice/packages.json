@@ -1,14 +1,14 @@
 [
   {
-    "file": "DIVIDED_HORIZON_Windows_Combat_Slice_0.3.zip",
-    "bytes": 4888692,
-    "sha256": "c86250d733f430bdc054aea66a60f5caa7fe937ead16b7881705569c038ede35",
-    "md5": "2dd4ffe7117d6508b9d8201f35711ae7"
+    "file": "DIVIDED_HORIZON_Windows_Combat_Slice_0.3.1.zip",
+    "bytes": 4887025,
+    "sha256": "f4837277c462835b07677bdf526d59f263ee08ca998685caefe208ae54365d46",
+    "md5": "4e28c9e888cdb6e80f7d15013c3b8200"
   },
   {
-    "file": "DIVIDED_HORIZON_Combat_Slice_0.3_Source.zip",
-    "bytes": 8500748,
-    "sha256": "7954baed55bb79c135a2b399bb8757f9384e7a4fd205d2f5aaa9b8edffd7767b",
-    "md5": "c84efeab63c35372112677105c78f708"
+    "file": "DIVIDED_HORIZON_Combat_Slice_0.3.1_Source.zip",
+    "bytes": 11511205,
+    "sha256": "92489b071a0c026743444e45772fdd6d225430b1d38f2d34edce235382217866",
+    "md5": "951b7e299058cf077c66d6ca0e08707e"
   }
 ]

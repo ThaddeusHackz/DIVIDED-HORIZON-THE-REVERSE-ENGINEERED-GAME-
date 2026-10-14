@@ -21,3 +21,6 @@ slice/generated/
 
 # Owner-local engine configuration; no machine paths or credentials in source
 tools/build/env.json
+
+# Release payloads belong in Releases/Drive, not the working tree
+.release-staging/

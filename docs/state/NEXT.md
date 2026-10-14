@@ -2,7 +2,7 @@
 S149 IDs below are real ledger IDs; these are supporting tasks, not claims that the entire WBS row is closed.
 
 1. **T-E01-097 / validators:** finish existing Batch 02 structural audit, fix broken captures, publish previews for H7. Validation, capture fix and PNG delivery done; obtain H7 review before a new batch.
-2. **T-E01-011 / evidence:** review defects, tests and delivery hashes recorded; next deepen reproducible capture checks while H7 reviews. Keep unsupported claims red.
+2. **T-E01-011 / evidence:** review defects, tests and 0.3.1 GitHub/Drive delivery hashes recorded; collect Windows launch feedback and deepen capture checks while H7 reviews. Keep unsupported claims red.
 3. **T-E01-049 / CI spec:** portable workflow run 38620528114 passed for commit 6313931; maintain coverage of v3 preflight tests and both GLB validators; never schedule untrusted PR code on a self-hosted machine.
 4. **T-E01-073 / LFS policy:** prepare production binary storage rules; activate tracking only after H4 capacity is confirmed. Do not rewrite current asset history.
 5. **T-E01-001 / spec lock:** verify current stable UE release and feature-maturity table against official release docs on H1 host; keep 5.6 as provisional until then.

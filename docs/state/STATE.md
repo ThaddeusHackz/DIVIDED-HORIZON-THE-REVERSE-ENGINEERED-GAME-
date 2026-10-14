@@ -5,7 +5,7 @@ Scope: T5 aspirational visual target; all required T1–T5 budgets unmeasured.
 
 ## Working now
 - Browser combat and shared C simulation; 21 unit tests and 13 browser checks re-run successfully after v3 integration.
-- Cross-compiled raylib Windows fallback delivered on Drive; Windows launch unverified.
+- Windows raylib prototype **0.3.1** rebuilt and published as a GitHub prerelease plus matching Drive mirror; 153 runtime files, 7 models, 6 sounds. Windows launch remains unverified.
 - Batch 01 (9 GLBs) and Batch 02 (7 GLBs); original prototype geometry, not photoreal.
 - Separate UE5.6-targeted project and manual build scripts, not compiled or run.
 
@@ -25,6 +25,13 @@ Scope: T5 aspirational visual target; all required T1–T5 budgets unmeasured.
 - `docs/evidence/batch-02/validation.json`: structural/manifest checks only.
 - `docs/evidence/batch-02/review.md`: visible defects and review limitations.
 - No T5 FPS, path tracing, Art Lock, Windows launch or Blind Bench pass is claimed.
+
+## Latest release delivery
+- GitHub: https://github.com/ThaddeusHackz/GAME/releases/tag/v0.3.1-prototype
+- Drive: https://drive.google.com/drive/folders/1eFBDncJic9QaOUTZ-CELvRi83HHKyfMz
+- `docs/evidence/releases/v0.3.1-prototype.json`: both-destination checksum proof and exact source commit.
+- 21 unit tests, 7 packaging regression tests, native simulation replay and portable CI pass; no Windows/Unreal launch pass.
+- Temporary publishing payload/workflow removed after attachment verification. Release is a maintenance refresh, not new gameplay or final art.
 
 ## Next
 Follow NEXT.md. Do not expand final-art districts or treat source-only UE delivery as a finished game.

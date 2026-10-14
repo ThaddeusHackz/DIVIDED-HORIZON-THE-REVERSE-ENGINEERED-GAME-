@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "scope": "Offline ZIP/PE/hash/runtime-file validation, NOT a Windows launch",
+  "files": 153,
+  "models": 7,
+  "sounds": 6,
+  "version": "0.3.1",
+  "sourceCommit": "0806cd2c05260c777fa2ff4552a2b811a9f4d62b",
+  "exeSha256": "48fa2ad4028df7c2fc9d98ba3e8ece1a520d67868a0112af5fd23f16f80a6e9f",
+  "windowsLaunchTested": false
+}
