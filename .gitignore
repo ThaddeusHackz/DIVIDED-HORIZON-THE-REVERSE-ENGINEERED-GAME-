@@ -1,2 +1,26 @@
 __pycache__/
 *.pyc
+node_modules/
+prototype/dist/
+.cache/
+artifacts/
+test-results/
+# Unreal-generated files and local build output
+native/**/Binaries/
+native/**/Intermediate/
+native/**/Saved/
+native/**/DerivedDataCache/
+native/**/.vs/
+native/**/*.sln
+native/**/*.uasset
+native/**/*.umap
+native/**/Content/PrototypeData/*.dhmesh
+native/**/Content/PrototypeData/*.json
+# Rebuilt shared simulation and cross-compiled deliverables
+slice/generated/
+
+# Owner-local engine configuration; no machine paths or credentials in source
+tools/build/env.json
+
+# Release payloads belong in Releases/Drive, not the working tree
+.release-staging/

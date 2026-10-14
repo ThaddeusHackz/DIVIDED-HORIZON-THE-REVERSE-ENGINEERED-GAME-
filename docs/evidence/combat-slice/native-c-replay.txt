@@ -1,0 +1,2 @@
+PASS: native C replay of 1439 ordinary-input frames completes all three objectives and extraction; 7 guards defeated.
+PASS: ammunition, pause, checksum rejection. Renderer and Windows launch are not exercised by this Linux test.

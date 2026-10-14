@@ -1,0 +1,46 @@
+name: Portable prototype checks (not Unreal certification)
+on:
+  pull_request:
+  push:
+    branches: ['arena/695b7985-game']
+permissions:
+  contents: read
+jobs:
+  portable:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: npm ci
+      - run: npm test
+      - run: npm run test:preflight
+      - run: npm run test:package
+      - run: npm run assets:validate
+      - run: npm run slice:validate
+      - run: npm run build
+      - run: npm run native:test
+      - run: npm run slice:assets
+      - run: npm run slice:playthrough
+      - run: npm run slice:test-native
+      - name: Inventory host (missing UE is reported, never treated as an engine gate pass)
+        run: npm run build:preflight
+      - name: Verify legacy prompt only (v3 uploads are not regenerated)
+        run: python tools/build_prompt.py --check
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: portable-check-evidence-NOT-UE-CERTIFICATION
+          path: |
+            docs/evidence/M0-v3/preflight.json
+            docs/evidence/batch-01/validation.json
+            docs/evidence/batch-02/validation.json
+            docs/evidence/combat-slice/simulation-playthrough.json
+            docs/evidence/combat-slice/native-c-replay.txt
+          if-no-files-found: error

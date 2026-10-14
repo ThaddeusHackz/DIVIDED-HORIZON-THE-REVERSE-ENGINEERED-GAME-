@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "environment": "Linux headless Chromium, quality=low; not a Windows renderer/launch test",
+  "scope": "Real UI/key events. Test-only positioning used for isolated UI checks; the separate full simulation playthrough uses no cheats.",
+  "checks": [
+    {
+      "name": "briefing loads, no checkpoint initially",
+      "passed": true
+    },
+    {
+      "name": "begin operation displays live combat HUD",
+      "passed": true
+    },
+    {
+      "name": "W moves the player through shared C simulation",
+      "passed": true
+    },
+    {
+      "name": "F input fires pistol and raycast headshot damages sentry",
+      "passed": true
+    },
+    {
+      "name": "HUD reload timer completes and ammunition transfers",
+      "passed": true
+    },
+    {
+      "name": "pause overlay freezes simulation",
+      "passed": true
+    },
+    {
+      "name": "manifest interaction unlocks rifle and writes checkpoint",
+      "passed": true
+    },
+    {
+      "name": "continue restores the saved checkpoint",
+      "passed": true
+    },
+    {
+      "name": "ledger and signal interactions update objective state",
+      "passed": true
+    },
+    {
+      "name": "extraction displays completed-mission debrief",
+      "passed": true
+    },
+    {
+      "name": "restart returns to a fresh playable operation",
+      "passed": true
+    },
+    {
+      "name": "briefing has no horizontal overflow at phone width",
+      "passed": true
+    },
+    {
+      "name": "no page errors or failed asset requests",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

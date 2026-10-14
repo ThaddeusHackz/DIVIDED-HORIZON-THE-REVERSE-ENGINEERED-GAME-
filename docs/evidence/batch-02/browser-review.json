@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "Seven model cards and seven full-resolution PNGs loaded",
+    "Prototype/non-final disclosure visible",
+    "All 15 model, PNG and manifest downloads respond successfully",
+    "390px mobile layout has no horizontal overflow",
+    "World stays visible when selected after a prop (hidden-clone regression)",
+    "Captured world contains visible land/props, not only water",
+    "No page errors or HTTP failures"
+  ],
+  "sandFraction": 0.2051,
+  "scope": "Browser review UI and world-capture regression only; not Unreal/Art Lock/Windows performance"
+}

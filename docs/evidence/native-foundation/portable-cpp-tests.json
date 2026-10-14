@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "scope": "Only engine-independent C++ headers; NOT the Unreal module",
+  "compiler": "/usr/bin/g++",
+  "command": [
+    "/usr/bin/g++",
+    "-std=c++20",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-pedantic",
+    "-I",
+    "/home/user/GAME/native/DividedHorizon/Source/DividedHorizon/Public",
+    "/home/user/GAME/tests/native-rules.cpp",
+    "-o",
+    "/home/user/GAME/.cache/native-tests/native-rules"
+  ],
+  "output": "PASS: exhaustive mission masks, save schema, shoreline bounds, real 92,138-triangle mesh, and malformed-mesh rejection.\nNOT TESTED: Unreal compilation, editor preparation, native gameplay, cook, Win64 packaging or launch.\n",
+  "unrealCompiled": false,
+  "windowsPackaged": false,
+  "windowsLaunchTested": false
+}

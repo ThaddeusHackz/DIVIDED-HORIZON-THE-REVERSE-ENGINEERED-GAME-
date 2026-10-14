@@ -1,0 +1,9 @@
+{
+  "format": "DHMS v1; baked procedural prototype, not Nanite/static-mesh production art",
+  "sourceGLBSha256": "96e161ff955d74587db1e6d1f72024a4f8f48b51677b9405bd6f182f868da93f",
+  "outputSha256": "b95bfa1d865db0fb52632956776bfac9bd6f4999a8278eed543154ce5b1ba8f0",
+  "bytes": 12162548,
+  "sections": 20,
+  "triangles": 92138,
+  "vertices": 276414
+}

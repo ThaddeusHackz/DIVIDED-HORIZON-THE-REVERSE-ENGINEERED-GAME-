@@ -1,0 +1,82 @@
+
+> divided-horizon-asset-lab@0.1.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: eight distinct original asset IDs match the checked-in manifest
+ok 1 - eight distinct original asset IDs match the checked-in manifest
+  ---
+  duration_ms: 5.042807
+  type: 'test'
+  ...
+# Subtest: generated vertex coordinates are finite and each model has geometry
+ok 2 - generated vertex coordinates are finite and each model has geometry
+  ---
+  duration_ms: 132.718476
+  type: 'test'
+  ...
+# Subtest: shore and dock boundaries reject the ocean
+ok 3 - shore and dock boundaries reject the ocean
+  ---
+  duration_ms: 0.420242
+  type: 'test'
+  ...
+# Subtest: solid props and hut walls block movement, door remains open
+ok 4 - solid props and hut walls block movement, door remains open
+  ---
+  duration_ms: 0.655935
+  type: 'test'
+  ...
+# Subtest: hut floor, stairs and dock use appropriate standing heights
+ok 5 - hut floor, stairs and dock use appropriate standing heights
+  ---
+  duration_ms: 0.505866
+  type: 'test'
+  ...
+# Subtest: mission requires all three unique tasks before extraction
+ok 6 - mission requires all three unique tasks before extraction
+  ---
+  duration_ms: 0.843883
+  type: 'test'
+  ...
+# Subtest: ledger cannot be read through hut walls
+ok 7 - ledger cannot be read through hut walls
+  ---
+  duration_ms: 0.39248
+  type: 'test'
+  ...
+# Subtest: every objective and extraction can be reached from spawn without crossing collision
+ok 8 - every objective and extraction can be reached from spawn without crossing collision
+  ---
+  duration_ms: 68.104383
+  type: 'test'
+  ...
+# Subtest: native coordinates use centimetres, +X forward, +Y right, +Z up
+ok 9 - native coordinates use centimetres, +X forward, +Y right, +Z up
+  ---
+  duration_ms: 1.343877
+  type: 'test'
+  ...
+# Native world: 20 sections, 92138 triangles, 12162548 bytes.
+# /home/user/GAME/native/DividedHorizon/Content/PrototypeData
+# Subtest: native world export preserves triangles and emits valid matching mission data
+ok 10 - native world export preserves triangles and emits valid matching mission data
+  ---
+  duration_ms: 1960.279697
+  type: 'test'
+  ...
+# Subtest: native converter rejects non-GLB input
+ok 11 - native converter rejects non-GLB input
+  ---
+  duration_ms: 2.12755
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2354.830093

@@ -1,0 +1,53 @@
+name: Native Windows prototype (owner-provisioned runner)
+# Manual only: never run arbitrary fork/PR code on a licensed, self-hosted machine.
+on:
+  workflow_dispatch:
+    inputs:
+      configuration:
+        description: Build configuration
+        type: choice
+        options: [Development, Shipping]
+        default: Development
+permissions:
+  contents: read
+jobs:
+  win64:
+    runs-on: [self-hosted, Windows, X64, unreal-5.6]
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Restore build dependencies
+        run: npm ci
+      - name: Require engine installation path
+        shell: pwsh
+        env:
+          UE_ROOT: ${{ vars.UE_ROOT }}
+        run: |
+          if (-not $env:UE_ROOT) { throw 'Set repository variable UE_ROOT to the licensed UE 5.6 install path on this runner.' }
+          if (-not (Test-Path $env:UE_ROOT)) { throw 'UE_ROOT is not available on this runner.' }
+      - name: Build editor, prepare content, cook and package Win64
+        shell: pwsh
+        env:
+          UE_ROOT: ${{ vars.UE_ROOT }}
+          CONFIGURATION: ${{ inputs.configuration }}
+        run: ./tools/unreal/build.ps1 -EngineRoot $env:UE_ROOT -Configuration $env:CONFIGURATION
+      - name: Archive native package (not automatically launch-certified)
+        uses: actions/upload-artifact@v4
+        with:
+          name: DividedHorizon-Win64-${{ inputs.configuration }}
+          path: artifacts/DividedHorizon-Win64/
+          if-no-files-found: error
+      - name: Preserve build logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: native-build-logs
+          path: |
+            native/DividedHorizon/Saved/Logs/
+            native/DividedHorizon/Saved/DHContentPreparationFailure.log
+            native/DividedHorizon/Saved/DHContentPrepared.json
+          if-no-files-found: ignore

@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-14",
+  "releaseUrl": "https://github.com/ThaddeusHackz/GAME/releases/tag/v0.3.1-prototype",
+  "releaseId": 413102523,
+  "tag": "v0.3.1-prototype",
+  "isDraft": false,
+  "isPrerelease": true,
+  "sourceCommit": "0806cd2c05260c777fa2ff4552a2b811a9f4d62b",
+  "engine": "raylib 5.5 fallback, not Unreal",
+  "windowsLaunchTested": false,
+  "driveFolderId": "1eFBDncJic9QaOUTZ-CELvRi83HHKyfMz",
+  "driveSharingChanged": false,
+  "files": [
+    {
+      "name": "DIVIDED_HORIZON_Combat_Slice_0.3.1_Source.zip",
+      "bytes": 11511205,
+      "sha256": "92489b071a0c026743444e45772fdd6d225430b1d38f2d34edce235382217866",
+      "md5": "951b7e299058cf077c66d6ca0e08707e",
+      "githubAssetId": 641434820,
+      "githubUrl": "https://github.com/ThaddeusHackz/GAME/releases/download/v0.3.1-prototype/DIVIDED_HORIZON_Combat_Slice_0.3.1_Source.zip",
+      "githubDigestMatched": true,
+      "driveId": "1uKb5nwj9Ll5I8RgUY5ECiFW7961PMMV8",
+      "driveUrl": "https://drive.google.com/file/d/1uKb5nwj9Ll5I8RgUY5ECiFW7961PMMV8/view",
+      "driveChecksumMatched": true
+    },
+    {
+      "name": "DIVIDED_HORIZON_Combat_Slice_0.3.1_Source.zip.sha256",
+      "bytes": 112,
+      "sha256": "c03b2b09f2755ac6bfd0c9e443b7b652d56806b775b9ae688712aeb5023e81d5",
+      "md5": "14ef4a425379d05d6a05b14865a8ef6e",
+      "githubAssetId": 641434822,
+      "githubUrl": "https://github.com/ThaddeusHackz/GAME/releases/download/v0.3.1-prototype/DIVIDED_HORIZON_Combat_Slice_0.3.1_Source.zip.sha256",
+      "githubDigestMatched": true,
+      "driveId": "1IVU6qexQWp7Mb3S_1-Xwn4l868aFKg9b",
+      "driveUrl": "https://drive.google.com/file/d/1IVU6qexQWp7Mb3S_1-Xwn4l868aFKg9b/view",
+      "driveChecksumMatched": true
+    },
+    {
+      "name": "DIVIDED_HORIZON_Windows_Combat_Slice_0.3.1.zip",
+      "bytes": 4887025,
+      "sha256": "f4837277c462835b07677bdf526d59f263ee08ca998685caefe208ae54365d46",
+      "md5": "4e28c9e888cdb6e80f7d15013c3b8200",
+      "githubAssetId": 641434825,
+      "githubUrl": "https://github.com/ThaddeusHackz/GAME/releases/download/v0.3.1-prototype/DIVIDED_HORIZON_Windows_Combat_Slice_0.3.1.zip",
+      "githubDigestMatched": true,
+      "driveId": "1b5mqo2ArNvQx4hKvqpJVthAKdY1PwaQC",
+      "driveUrl": "https://drive.google.com/file/d/1b5mqo2ArNvQx4hKvqpJVthAKdY1PwaQC/view",
+      "driveChecksumMatched": true
+    },
+    {
+      "name": "DIVIDED_HORIZON_Windows_Combat_Slice_0.3.1.zip.sha256",
+      "bytes": 113,
+      "sha256": "dbf552d05039a2ddc34bb1d5c60713a4acdcecaae0a930666358cca935b781cd",
+      "md5": "fc37afed79da224889878d0fa8791033",
+      "githubAssetId": 641434823,
+      "githubUrl": "https://github.com/ThaddeusHackz/GAME/releases/download/v0.3.1-prototype/DIVIDED_HORIZON_Windows_Combat_Slice_0.3.1.zip.sha256",
+      "githubDigestMatched": true,
+      "driveId": "1kUJDgTIzGkAMTZ47ca4yeWj9MA5Ms5q5",
+      "driveUrl": "https://drive.google.com/file/d/1kUJDgTIzGkAMTZ47ca4yeWj9MA5Ms5q5/view",
+      "driveChecksumMatched": true
+    },
+    {
+      "name": "READ_ME_FIRST.txt",
+      "bytes": 3628,
+      "sha256": "d0690f51b39f2f58616b83f5304f653fb4f390e5ed56784554c26bab5b780c3a",
+      "md5": "c5481fd6f488ca8960789ee822485167",
+      "githubAssetId": 641434824,
+      "githubUrl": "https://github.com/ThaddeusHackz/GAME/releases/download/v0.3.1-prototype/READ_ME_FIRST.txt",
+      "githubDigestMatched": true,
+      "driveId": "1Q-P0QOXsCf_Lm_34ZCU11dj3ahmAKrVV",
+      "driveUrl": "https://drive.google.com/file/d/1Q-P0QOXsCf_Lm_34ZCU11dj3ahmAKrVV/view",
+      "driveChecksumMatched": true
+    }
+  ],
+  "portableCiRun": "https://github.com/ThaddeusHackz/GAME/actions/runs/38623857604",
+  "attachmentTransferRun": "https://github.com/ThaddeusHackz/GAME/actions/runs/38624804803",
+  "transferNote": "Direct uploads.github.com access failed here. A one-off hosted GitHub job attached the exact pre-verified local bundles from temporary transfer files on the session branch. Transfer files/workflow are removed from the branch after publication; their historical Git objects remain. No history rewrite or new branch was used."
+}

@@ -1,0 +1,26 @@
+{
+  "version": "0.3.1",
+  "sourceCommit": "0806cd2c05260c777fa2ff4552a2b811a9f4d62b",
+  "runtimeInputHashes": {
+    "slice/src/core.c": "f570d7b2699e6244d87afb01c35cc26af4de004867f8ad1e7deac7e20eae1d18",
+    "slice/src/core.h": "e23da148dc90b93906a7726c1aff3c4da42534a4f39f2324e3459b79ec6a21f6",
+    "slice/src/desktop.c": "bf46ca08ae4a1a3cd5b46bb2099fb5ce63ded94af243481491ccdc8d9edd9f54",
+    "slice/generated/data.h": "39b13a5ee0fd9082e20a7c6bfa71c005a3c128acca2a607e9dfb4a22230e82e1",
+    "prototype/public/assets/batch-02/manifest.json": "f973da56dbd95ae645a971f12fb853c0a0002e5a7c933128710c52547cb4f21f"
+  },
+  "status": "WINDOWS_X64_COMPILED_NOT_WINDOWS_LAUNCH_VERIFIED",
+  "engine": "raylib 5.5 fallback slice; NOT Unreal",
+  "target": "x86_64-windows-gnu / OpenGL 3.3",
+  "bytes": 1145856,
+  "sha256": "48fa2ad4028df7c2fc9d98ba3e8ece1a520d67868a0112af5fd23f16f80a6e9f",
+  "systemDLLs": [
+    "GDI32.dll",
+    "WINMM.dll",
+    "USER32.dll",
+    "SHELL32.dll",
+    "KERNEL32.dll",
+    "msvcrt.dll"
+  ],
+  "windowsLaunchTested": false,
+  "gameplayCore": "same slice/src/core.c used by the browser WebAssembly build"
+}

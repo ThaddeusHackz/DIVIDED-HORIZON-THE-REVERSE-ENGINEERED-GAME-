@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "scope": "Read-only file/tool inventory, not a build or M0 certification",
+  "host": {
+    "system": "Linux",
+    "architecture": "x86_64",
+    "windows_x64": false
+  },
+  "tools": {
+    "git": true,
+    "git_lfs": false,
+    "ffmpeg": false,
+    "archive": false,
+    "powershell": false,
+    "python_3_11_plus": true
+  },
+  "engine": {
+    "configured": false,
+    "version": null,
+    "files": {},
+    "issues": [
+      "Set UE_ROOT or engine_root in tools/build/env.json."
+    ]
+  },
+  "status": "BLOCKED",
+  "prerequisite_files_present": false,
+  "m0_passed": false,
+  "unverified": [
+    "Windows 11 and hardware capacity",
+    "Epic EULA and asset licenses",
+    "Latest stable UE release and feature maturity",
+    "C++ compiler and SDK compatibility",
+    "GPU/driver and T1\u2013T5 budgets",
+    "Compile/cook/package/launch",
+    "Editor automation, captures and profiling",
+    "Human Art Lock/Blind Bench"
+  ]
+}
