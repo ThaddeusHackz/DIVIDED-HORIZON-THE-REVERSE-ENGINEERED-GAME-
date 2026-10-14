@@ -1,3 +1,41 @@
+# DIVIDED HORIZON — Playable Combat Slice 0.3
+
+**The full game is not finished.** This repository now contains a playable combat slice, original 3D assets, a compiled Windows fallback build pipeline, and a separate UE5 source foundation.
+
+## Play / download
+
+- **Live preview:** the main page now opens **La Aduana**, a first-person combat mission.
+- **Local browser:** `npm ci`, then `npm run dev`. Asset review remains at `/asset-lab.html`.
+- **Windows:** [download the package](https://drive.google.com/file/d/1bkNEnNmzBS4snngT4wju0PvHnVklo1Vx/view), extract the complete `DIVIDED_HORIZON_Windows_Combat_Slice_0.3.zip`, then run `DividedHorizon-Slice.exe` alongside its `assets/` folder. See [player/build guide](docs/COMBAT_SLICE.md).
+- **Drive deliveries:** [DIVIDED HORIZON GAME ASSETS](https://drive.google.com/drive/folders/1S0_Uj1N3R7fSdse6sUPr4slaPxCSdw74).
+
+**Windows status:** the executable is cross-compiled for Windows x64 and its PE format/dependencies are checked. It has **not** been launched on Windows here. It uses raylib under the brief's explicit fallback ladder; it is **not an Unreal executable**. Unreal remains the final production target.
+
+## Working slice features
+
+Culebra pistol and unlockable Libertad rifle; ammo/reload/headshots; wall-occluded shooting; six sentry patrols and up to two reinforcements; detection/search/return fire; grid routing; health/field kits; sprint/crouch/jump; three objectives and extraction; death/retry; versioned checkpoints; pause; original prototype sound effects.
+
+WASD move · Mouse/F fire · Right-click aim · R reload · E interact · H heal · Shift sprint · Ctrl crouch · Space jump · 1/2 weapons · Escape pause.
+
+`slice/src/core.c` is shared by the browser WebAssembly build and the Windows executable. An automated, non-cheating mission run and its native-C input replay are recorded in [combat evidence](docs/evidence/combat-slice/).
+
+## Content and tools
+
+| Path | Contents |
+|---|---|
+| `prototype/public/assets/batch-01/` | Original eight-piece environment kit and review world |
+| `prototype/public/assets/batch-02/` | Six new combat/cover assets, expanded world, data and SFX |
+| `slice/src/` | Shared simulation and standalone Windows renderer/application |
+| `tools/slice/` | Pinned toolchain setup, asset/WASM/Windows builds, packaging |
+| `native/DividedHorizon/` | Separate UE5.6-targeted C++ foundation — **not compiled here** |
+| `docs/COMBAT_SLICE.md` | Controls, builds, verification scope and remaining work |
+
+Checks: `npm test`, `npm run slice:playthrough`, `npm run slice:test-native`, `npm run assets:validate`, `npm run build`. Cross-build steps and required Linux tools are documented in the guide. Native renderer and Windows launch testing remain pending.
+
+**Still missing:** final photoreal art, proper character/weapon animation, full island/city, campaign, vehicles, large-world simulation, advanced ballistics/destruction, production polish/performance/accessibility, and a UE5 shipping build. The original brief below is a target, not a completion claim.
+
+---
+
 # DIVIDED HORIZON — Master Build Order v2
 
 `MASTER_PROMPT.md` is the production prompt for an original, photoreal, Unreal Engine 5 open-world action game

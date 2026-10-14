@@ -1,0 +1,62 @@
+
+> divided-horizon-asset-lab@0.1.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: eight distinct original asset IDs match the checked-in manifest
+ok 1 - eight distinct original asset IDs match the checked-in manifest
+  ---
+  duration_ms: 6.860361
+  type: 'test'
+  ...
+# Subtest: generated vertex coordinates are finite and each model has geometry
+ok 2 - generated vertex coordinates are finite and each model has geometry
+  ---
+  duration_ms: 114.495371
+  type: 'test'
+  ...
+# Subtest: shore and dock boundaries reject the ocean
+ok 3 - shore and dock boundaries reject the ocean
+  ---
+  duration_ms: 0.325086
+  type: 'test'
+  ...
+# Subtest: solid props and hut walls block movement, door remains open
+ok 4 - solid props and hut walls block movement, door remains open
+  ---
+  duration_ms: 0.318367
+  type: 'test'
+  ...
+# Subtest: hut floor, stairs and dock use appropriate standing heights
+ok 5 - hut floor, stairs and dock use appropriate standing heights
+  ---
+  duration_ms: 0.181336
+  type: 'test'
+  ...
+# Subtest: mission requires all three unique tasks before extraction
+ok 6 - mission requires all three unique tasks before extraction
+  ---
+  duration_ms: 0.533646
+  type: 'test'
+  ...
+# Subtest: ledger cannot be read through hut walls
+ok 7 - ledger cannot be read through hut walls
+  ---
+  duration_ms: 0.198369
+  type: 'test'
+  ...
+# Subtest: every objective and extraction can be reached from spawn without crossing collision
+ok 8 - every objective and extraction can be reached from spawn without crossing collision
+  ---
+  duration_ms: 56.542897
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 311.697077

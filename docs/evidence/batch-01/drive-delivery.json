@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-14",
+  "folder": "https://drive.google.com/drive/folders/1VrsezSia_cpv1t6p3DPbQoW16o4s9WES",
+  "archive": "https://drive.google.com/file/d/1C45shTqVvvB3EIcyJSXxmblCbrCxNeom/view",
+  "archiveBytes": 6938086,
+  "archiveSha256": "bd7e25787aac81e5487a3651f83d2e42316ec2e796511d74aa7a8b7abfd41af6",
+  "archiveMD5": "79af2f65ce303e78cc266b21ceaf4457",
+  "verification": "Drive-reported size and MD5 match local archive. All nine Drive model MD5s match local files.",
+  "modelMD5s": {
+    "SM_CustomsHut_01.glb": "761cf44d041327c715bec7130e548a64",
+    "SM_Dock_01.glb": "62f1c8d110c12a54dce6adba03fd8c77",
+    "SM_SignalMast_01.glb": "63553721e61f8c66de1420821e8d690c",
+    "SM_CargoCrate_01.glb": "9c48546aed909d3382f6754b304dd73c",
+    "SM_FuelDrum_01.glb": "b453f15838568665d7665982ce6427b0",
+    "SM_Checkpoint_01.glb": "76881e6c51ebfccf2faf59127037bda5",
+    "SM_CoastalPalm_01.glb": "a85684bc22427c3e3d2b07dbbf1dea95",
+    "SM_EvidenceDesk_01.glb": "3ef2d3d7e2f40306df887cc2a827d3c0",
+    "L_PuertoChico_Prototype.glb": "90af79228d33b1c7a2d928b701f5a1ea"
+  },
+  "permissionsChanged": false,
+  "note": "Receipt recorded after upload; it is not inside the uploaded ZIP."
+}

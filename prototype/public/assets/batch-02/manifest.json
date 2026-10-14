@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "date": "2026-10-14",
+  "status": "Combat slice prototype assets; not final photoreal art",
+  "provenance": "Original AI-assisted procedural geometry; no Tripo, third-party art or copied IP.",
+  "assets": [
+    {
+      "id": "SM_Culebra_W01",
+      "file": "SM_Culebra_W01.glb",
+      "preview": "previews/SM_Culebra_W01.png",
+      "triangles": 1560,
+      "bytes": 118584,
+      "sha256": "7dc8c4c9f7633d0a362a52085125e8a3886085f0b0232270edd7942a1a4a79d8",
+      "units": "metres",
+      "upAxis": "Y",
+      "prototype": true
+    },
+    {
+      "id": "SM_Libertad_W05",
+      "file": "SM_Libertad_W05.glb",
+      "preview": "previews/SM_Libertad_W05.png",
+      "triangles": 1776,
+      "bytes": 134820,
+      "sha256": "f6f778f031add61045a15a0c87b65943a3e40a85c6eaec768b83fa221a9f1edd",
+      "units": "metres",
+      "upAxis": "Y",
+      "prototype": true
+    },
+    {
+      "id": "SM_Cosecha_Sentry_01",
+      "file": "SM_Cosecha_Sentry_01.glb",
+      "preview": "previews/SM_Cosecha_Sentry_01.png",
+      "triangles": 4216,
+      "bytes": 321560,
+      "sha256": "e05fb8184a1349969c66982ba30c757c21d58311c8bb5c5b19b02a5671deec69",
+      "units": "metres",
+      "upAxis": "Y",
+      "prototype": true
+    },
+    {
+      "id": "SM_SandbagCover_01",
+      "file": "SM_SandbagCover_01.glb",
+      "preview": "previews/SM_SandbagCover_01.png",
+      "triangles": 2160,
+      "bytes": 157264,
+      "sha256": "370acd63e0a3e85a53ac9add38934ddcfffd94a11b3c6789060c0d083361051a",
+      "units": "metres",
+      "upAxis": "Y",
+      "prototype": true
+    },
+    {
+      "id": "SM_FieldGenerator_01",
+      "file": "SM_FieldGenerator_01.glb",
+      "preview": "previews/SM_FieldGenerator_01.png",
+      "triangles": 2028,
+      "bytes": 152800,
+      "sha256": "be5f1e14abefeef5600ab7a70e393ea4d983dda50af1e577086f17041d7730cb",
+      "units": "metres",
+      "upAxis": "Y",
+      "prototype": true
+    },
+    {
+      "id": "SM_HarborContainer_01",
+      "file": "SM_HarborContainer_01.glb",
+      "preview": "previews/SM_HarborContainer_01.png",
+      "triangles": 7548,
+      "bytes": 549452,
+      "sha256": "ccf987f9455e1e7b7e9879de34d0cb4aa5d1d8b74aa8b637f2f33815c9e5f985",
+      "units": "metres",
+      "upAxis": "Y",
+      "prototype": true
+    },
+    {
+      "id": "L_PuertoChico_Combat",
+      "file": "L_PuertoChico_Combat.glb",
+      "preview": "previews/L_PuertoChico_Combat.png",
+      "triangles": 155900,
+      "bytes": 11627472,
+      "sha256": "e7755b5123d88b6186e634b098d6ded58cbe5dc708e5f1418af989c92f235791",
+      "units": "metres",
+      "upAxis": "Y",
+      "prototype": true
+    }
+  ]
+}

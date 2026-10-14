@@ -1,0 +1,9 @@
+prototype/public/assets/batch-01/L_PuertoChico_Prototype.glb: OK
+prototype/public/assets/batch-01/SM_CargoCrate_01.glb: OK
+prototype/public/assets/batch-01/SM_Checkpoint_01.glb: OK
+prototype/public/assets/batch-01/SM_CoastalPalm_01.glb: OK
+prototype/public/assets/batch-01/SM_CustomsHut_01.glb: OK
+prototype/public/assets/batch-01/SM_Dock_01.glb: OK
+prototype/public/assets/batch-01/SM_EvidenceDesk_01.glb: OK
+prototype/public/assets/batch-01/SM_FuelDrum_01.glb: OK
+prototype/public/assets/batch-01/SM_SignalMast_01.glb: OK

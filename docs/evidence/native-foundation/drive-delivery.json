@@ -1,0 +1,12 @@
+{
+  "status": "UPLOADED_SOURCE_ONLY",
+  "folder": "https://drive.google.com/drive/folders/1_aCKq_ovR6RwhEKF6r3GzDDqUyzZzjGv",
+  "archive": "https://drive.google.com/file/d/1iuIy5nNZS0K8x-Fg1Cags6E_B7IyK7MX/view",
+  "bytes": 5699044,
+  "sha256": "756fd9433e2bbdd0f16636e29f078f0670f9a099c8b54382e44913f8a784e9fb",
+  "md5": "0f2e34ec875602e9653da0a0863446df",
+  "driveSizeAndMD5Match": true,
+  "unrealCompiled": false,
+  "windowsExecutableIncluded": false,
+  "note": "Recorded after upload; not inside the uploaded archive."
+}

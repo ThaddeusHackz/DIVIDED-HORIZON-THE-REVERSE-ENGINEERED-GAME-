@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "environment": "Headless Chromium / Linux / software rendering. Not a Windows or GPU performance test.",
+  "checks": [
+    {
+      "name": "all eight models listed",
+      "passed": true
+    },
+    {
+      "name": "category filtering and GLB selection",
+      "passed": true
+    },
+    {
+      "name": "rotation and dawn/dusk controls",
+      "passed": true
+    },
+    {
+      "name": "actual canvas PNG download",
+      "passed": true
+    },
+    {
+      "name": "enter playable world",
+      "passed": true
+    },
+    {
+      "name": "keyboard movement changes player position",
+      "passed": true
+    },
+    {
+      "name": "pause freezes movement and resume works",
+      "passed": true
+    },
+    {
+      "name": "E interaction: manifest",
+      "passed": true
+    },
+    {
+      "name": "E interaction: ledger",
+      "passed": true
+    },
+    {
+      "name": "E interaction: signal",
+      "passed": true
+    },
+    {
+      "name": "assignment completion at jetty",
+      "passed": true
+    },
+    {
+      "name": "restart clears all mission progress",
+      "passed": true
+    },
+    {
+      "name": "exit restores asset viewer",
+      "passed": true
+    },
+    {
+      "name": "mobile gallery fits viewport without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "no JavaScript errors or failed HTTP assets",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failedRequests": []
+}

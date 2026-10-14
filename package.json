@@ -1,0 +1,37 @@
+{
+  "name": "divided-horizon-asset-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 prototype",
+    "build": "vite build prototype",
+    "assets:generate": "node tools/assets/generate.mjs",
+    "assets:validate": "node tools/assets/validate.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "assets:previews": "node tools/assets/render-previews.mjs",
+    "assets:package": "python3 tools/assets/package_batch.py",
+    "native:export": "node tools/unreal/export_native.mjs",
+    "native:test": "python3 tools/unreal/test_native.py",
+    "native:package-source": "python3 tools/unreal/package_source.py",
+    "slice:assets": "node tools/slice/assets.mjs && python3 tools/slice/audio.py",
+    "slice:setup": "python3 tools/slice/setup_toolchain.py",
+    "slice:core": "python3 tools/slice/build_core.py",
+    "slice:windows": "python3 tools/slice/build_windows.py",
+    "slice:playthrough": "node tests/combat-playthrough.mjs",
+    "slice:test-native": "python3 tools/slice/test_native.py",
+    "slice:test-browser": "node tests/combat-browser.mjs",
+    "slice:previews": "node tools/slice/render-previews.mjs",
+    "slice:package": "python3 tools/slice/package.py"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "vite": "7.1.12",
+    "@playwright/test": "1.56.1",
+    "gltf-validator": "2.0.0-dev.3.10",
+    "@sparticuz/chromium": "141.0.0"
+  }
+}

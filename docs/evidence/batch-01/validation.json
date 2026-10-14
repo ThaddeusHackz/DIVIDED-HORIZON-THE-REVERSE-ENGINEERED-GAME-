@@ -1,0 +1,88 @@
+{
+  "scope": "GLB structural validation only; not an art, UE5, collision or performance certification",
+  "validator": "Khronos gltf-validator 2.0.0-dev.3.10",
+  "assets": [
+    {
+      "id": "SM_CustomsHut_01",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": [],
+      "triangles": 2128,
+      "sha256": "5fe554b4096df680d4d77b96bcf1e93ee04657bee30a177ed2b54747ad8d9ce2"
+    },
+    {
+      "id": "SM_Dock_01",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": [],
+      "triangles": 9464,
+      "sha256": "f9f968fc052d903c0c768b48adbc895effcfb2c49a701a5d57165f2ebcab54b0"
+    },
+    {
+      "id": "SM_SignalMast_01",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": [],
+      "triangles": 2444,
+      "sha256": "bceb4e4b410c348e28c073942f0d57a04576152d3156ba041135c1967e031eaf"
+    },
+    {
+      "id": "SM_CargoCrate_01",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": [],
+      "triangles": 756,
+      "sha256": "db9bd1bf5118573bdd286fb331fe5aa0aca94cec16d540adeedd3639277374f3"
+    },
+    {
+      "id": "SM_FuelDrum_01",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": [],
+      "triangles": 1876,
+      "sha256": "0d3ab1a7c8495b0727a8adaa13aae9c93fc10cfeffe1d1f253fd47187bc00e95"
+    },
+    {
+      "id": "SM_Checkpoint_01",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": [],
+      "triangles": 888,
+      "sha256": "1f8dad5e2b220cf8a77e2ef0e5d696094fa1c04c3bf66196048ed829fa3ea2c2"
+    },
+    {
+      "id": "SM_CoastalPalm_01",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": [],
+      "triangles": 3742,
+      "sha256": "7f45dcd592bd385ed58728a2ced39d91afa9c3f254260b8303d3c1dea73a0cbc"
+    },
+    {
+      "id": "SM_EvidenceDesk_01",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": [],
+      "triangles": 704,
+      "sha256": "55a453ae4e59d1136380cdc084fcbc0e40dc1eea25b3fbda64a6c130b88bba4b"
+    },
+    {
+      "id": "L_PuertoChico_Prototype",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": [],
+      "triangles": 92138,
+      "sha256": "96e161ff955d74587db1e6d1f72024a4f8f48b51677b9405bd6f182f868da93f"
+    }
+  ],
+  "passed": true
+}

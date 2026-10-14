@@ -1,0 +1,17 @@
+{
+  "status": "WINDOWS_X64_COMPILED_NOT_WINDOWS_LAUNCH_VERIFIED",
+  "engine": "raylib 5.5 fallback slice; NOT Unreal",
+  "target": "x86_64-windows-gnu / OpenGL 3.3",
+  "bytes": 1145856,
+  "sha256": "79d34f545d7315d72efec54aa0b9b17becb298aa5b1bbc93af72606a14710701",
+  "systemDLLs": [
+    "GDI32.dll",
+    "WINMM.dll",
+    "USER32.dll",
+    "SHELL32.dll",
+    "KERNEL32.dll",
+    "msvcrt.dll"
+  ],
+  "windowsLaunchTested": false,
+  "gameplayCore": "same slice/src/core.c used by the browser WebAssembly build"
+}

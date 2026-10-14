@@ -1,0 +1,52 @@
+{
+  "scope": "Automated playthrough of the shared C/WASM simulation using ordinary movement, aiming, fire, reload, healing and interaction inputs. No teleport, god mode, enemy deletion or direct objective mutation.",
+  "passed": true,
+  "difficulty": "Standard",
+  "result": {
+    "x": 2.523190545389298e-10,
+    "y": 2.128000020980835,
+    "z": 18.439817428588867,
+    "yaw": 3.141592502593994,
+    "pitch": 0,
+    "health": 100,
+    "stamina": 100,
+    "ammo": 26,
+    "reserve": 110,
+    "reload": 0,
+    "weapon": 1,
+    "phase": 3,
+    "mask": 7,
+    "kills": 7,
+    "alert": 23.984140396118164,
+    "prompt": -1,
+    "time": 23.983139038085938,
+    "message": 4,
+    "medkits": 3,
+    "alive": 0,
+    "difficulty": 1,
+    "hit": 0,
+    "checkpoint": 4
+  },
+  "minimumHealth": 100,
+  "shots": 17,
+  "timeline": [
+    {
+      "seconds": 5.58,
+      "mask": 1,
+      "health": 100,
+      "kills": 5
+    },
+    {
+      "seconds": 10.48,
+      "mask": 3,
+      "health": 100,
+      "kills": 6
+    },
+    {
+      "seconds": 15.28,
+      "mask": 7,
+      "health": 100,
+      "kills": 7
+    }
+  ]
+}
