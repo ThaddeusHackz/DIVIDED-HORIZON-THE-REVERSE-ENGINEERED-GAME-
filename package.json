@@ -23,7 +23,12 @@
     "slice:test-native": "python3 tools/slice/test_native.py",
     "slice:test-browser": "node tests/combat-browser.mjs",
     "slice:previews": "node tools/slice/render-previews.mjs",
-    "slice:package": "python3 tools/slice/package.py"
+    "slice:package": "python3 tools/slice/package.py",
+    "slice:validate": "node tools/slice/validate_assets.mjs",
+    "slice:package-source": "python3 tools/slice/package.py --source-only",
+    "build:preflight": "python3 tools/build/preflight.py",
+    "test:preflight": "python3 -m unittest discover -s tests -p 'test_preflight.py'",
+    "test:asset-review": "node tests/asset-review-browser.mjs"
   },
   "dependencies": {
     "three": "0.180.0"

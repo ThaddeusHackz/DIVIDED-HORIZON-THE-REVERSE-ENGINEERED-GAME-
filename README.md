@@ -2,10 +2,19 @@
 
 **The full game is not finished.** This repository now contains a playable combat slice, original 3D assets, a compiled Windows fallback build pipeline, and a separate UE5 source foundation.
 
+## Current production order: v3
+
+Read [START_HERE_v3.md](START_HERE_v3.md) first. The owner's new Part Ω overrides earlier execution plans: **UE5 production, T5 aspirational fidelity, Epic foundation evaluation, and Golden Slice quality before scale**. The current browser/raylib slice is not final art or a passed Unreal milestone.
+
+- [M0→M4 plan and version-verification gaps](docs/reports/V3_ALIGNMENT.md)
+- [Current state](docs/state/STATE.md) · [Next ten tasks](docs/state/NEXT.md) · [Human prerequisites](docs/state/HUMAN_ASKS.md)
+- [Batch 02 review guide](docs/ASSET_BATCH_02.md) — open `/review.html` in the live preview for model pictures and GLB downloads.
+- `npm run build:preflight` inventories the host; `npm run test:preflight` checks the inventory logic. A passing portable check is never an Unreal/Windows launch certification.
+
 ## Play / download
 
 - **Live preview:** the main page now opens **La Aduana**, a first-person combat mission.
-- **Local browser:** `npm ci`, then `npm run dev`. Asset review remains at `/asset-lab.html`.
+- **Local browser:** `npm ci`, then `npm run dev`. Batch 02 review is at `/review.html`; Batch 01 remains at `/asset-lab.html`.
 - **Windows:** [download the package](https://drive.google.com/file/d/1bkNEnNmzBS4snngT4wju0PvHnVklo1Vx/view), extract the complete `DIVIDED_HORIZON_Windows_Combat_Slice_0.3.zip`, then run `DividedHorizon-Slice.exe` alongside its `assets/` folder. See [player/build guide](docs/COMBAT_SLICE.md).
 - **Drive deliveries:** [DIVIDED HORIZON GAME ASSETS](https://drive.google.com/drive/folders/1S0_Uj1N3R7fSdse6sUPr4slaPxCSdw74).
 
@@ -38,7 +47,7 @@ Checks: `npm test`, `npm run slice:playthrough`, `npm run slice:test-native`, `n
 
 # DIVIDED HORIZON — Master Build Order v2
 
-`MASTER_PROMPT.md` is the production prompt for an original, photoreal, Unreal Engine 5 open-world action game
+`MASTER_PROMPT.md` is the preserved legacy v2 production prompt (superseded in execution order by v3) for an original, photoreal, Unreal Engine 5 open-world action game
 (island-ops FPS + city crime sandbox). It is **generated** and ~100,000 lines long.
 
 | Path | What it is |

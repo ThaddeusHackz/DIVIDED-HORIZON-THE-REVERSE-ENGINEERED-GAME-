@@ -18,3 +18,6 @@ native/**/Content/PrototypeData/*.dhmesh
 native/**/Content/PrototypeData/*.json
 # Rebuilt shared simulation and cross-compiled deliverables
 slice/generated/
+
+# Owner-local engine configuration; no machine paths or credentials in source
+tools/build/env.json

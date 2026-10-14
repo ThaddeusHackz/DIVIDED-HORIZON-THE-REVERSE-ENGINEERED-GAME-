@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-14",
+  "folderId": "1kvKzkuO38EAyqIIP8ditOiuLN1RUh6xi",
+  "sharingChanged": false,
+  "files": [
+    {
+      "path": "prototype/public/assets/batch-02/previews/L_PuertoChico_Combat.png",
+      "driveId": "1cuLhtCYypZ2BuUCJxqHKhppj6gVthGJW",
+      "bytes": 537106,
+      "md5": "12f2eef421de6dc7da4ab11c63dbf4ac",
+      "sha256": "501db16c1e681c022e20fdb08808b203902594eae8858b5a20659cebf621e7fd",
+      "driveChecksumMatched": true
+    },
+    {
+      "path": "prototype/public/assets/batch-02/previews/SM_Culebra_W01.png",
+      "driveId": "1gM3EWfZE9Gz5f-VnBWbz5hhLojBptwiX",
+      "bytes": 113619,
+      "md5": "614ddc64eb34aa6cc512a17b5c1c5478",
+      "sha256": "90d37b0def5793f643d8b127edef4423c4e2ce0d4e87e7a9c694c52fff7bfa66",
+      "driveChecksumMatched": true
+    },
+    {
+      "path": "prototype/public/assets/batch-02/previews/SM_Libertad_W05.png",
+      "driveId": "12Dxyoz4_mXhN-Ii7n4QS3zYq7kJ95ncj",
+      "bytes": 64748,
+      "md5": "11f9d3ccaaa780008e4ee8034f821583",
+      "sha256": "5af244215aeab32dfbf7a9e5c4b22d0faa44dc17542438ee2098d29b0f8dcdb9",
+      "driveChecksumMatched": true
+    },
+    {
+      "path": "prototype/public/assets/batch-02/previews/SM_Cosecha_Sentry_01.png",
+      "driveId": "1kgajO56ixr-JuyNynMzxMd5yqVkKJc8X",
+      "bytes": 80400,
+      "md5": "b38335acda60b963c9627fbd4ad0a4e7",
+      "sha256": "d804aa5bb2e6e7a6b93b0ad639e84ff8560ae9040f7e7e696d1d7607e5ba408e",
+      "driveChecksumMatched": true
+    },
+    {
+      "path": "prototype/public/assets/batch-02/previews/SM_SandbagCover_01.png",
+      "driveId": "1oK2XUoO_ywZiLq1_PgoxnwyCXZNnSbHW",
+      "bytes": 130447,
+      "md5": "e19e34dce2af83e81bd7ef48ad763ef7",
+      "sha256": "dc23887eb3fa77b344b22a4c8791c53b170bad263d2e301437d5e08a16a850fa",
+      "driveChecksumMatched": true
+    },
+    {
+      "path": "prototype/public/assets/batch-02/previews/SM_FieldGenerator_01.png",
+      "driveId": "1-t20eNVGRJSlphGS1cJyKc7oCjT5bfdA",
+      "bytes": 106600,
+      "md5": "e5c8247e4a8d42b9ccd78015045d604a",
+      "sha256": "7a6d4b5d4fbc5d6a2f477e7850e9fa087f1699d368d0c896303ee26dc2a9cc41",
+      "driveChecksumMatched": true
+    },
+    {
+      "path": "prototype/public/assets/batch-02/previews/SM_HarborContainer_01.png",
+      "driveId": "10VO_brWerfDGp83i3dRga3-fL1kdD59o",
+      "bytes": 94129,
+      "md5": "db598a9194368de342cf7d71a5249e87",
+      "sha256": "061b7c6ee8597c20b42553997e4440013bb0bb584aadca258ad9bd38da6df5bb",
+      "driveChecksumMatched": true
+    }
+  ],
+  "source": {
+    "driveId": "1ghcrJbrRCPXcIo5T4yUvN4-Bz1Nh0-av",
+    "file": "DIVIDED_HORIZON_Combat_Slice_0.3_Source.zip",
+    "bytes": 11497461,
+    "sha256": "70b4fed643006455a578892081db1208798edf4fdb0dd541f3b6d3d835379700",
+    "md5": "bdaa4e425c1a7e99b13347b7cd072be5",
+    "driveChecksumMatched": true,
+    "contents": "Source snapshot with models, corrected PNG previews, code, v3 briefs; not a runnable Windows package. Delivery receipts added to Git after ZIP creation."
+  },
+  "checksumDriveId": "1XRLGXQkPEGvh-hL71J8TrJ5om5P4Hn32",
+  "reviewGuideDriveId": "1h5bvnGqH62zK1NxBh-BvZHwp-7bpsm1z",
+  "v3PlanDriveId": "162yd6PpPFXyv27RcvOqxSwN7mwlt0GdD"
+}

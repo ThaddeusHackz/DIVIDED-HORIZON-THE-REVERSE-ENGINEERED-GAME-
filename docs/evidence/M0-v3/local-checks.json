@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-14",
+  "scope": "Local portable checks after v3 integration; no Unreal or Windows runtime certification",
+  "checks": {
+    "unitTests": 21,
+    "preflightUnitTests": 5,
+    "assetReviewBrowserChecks": 7,
+    "combatBrowserChecks": 13,
+    "batch01GLBs": {
+      "count": 9,
+      "errors": 0,
+      "warnings": 0
+    },
+    "batch02GLBs": {
+      "count": 7,
+      "errors": 0,
+      "warnings": 0
+    },
+    "browserProductionBuild": "passed",
+    "portableCppRulesAndMesh": "passed",
+    "ordinaryInputWasmPlaythrough": "passed",
+    "nativeCReplay": "passed, 1439 input frames",
+    "sourceZipCRC": "passed",
+    "extractedSourceZipUnitTests": 21,
+    "extractedSourceZipBrowserBuild": "passed",
+    "preflightRequireReady": "correctly exits 2 on this unsupported Linux host",
+    "legacyPromptCheck": "passed; v3 not regenerated"
+  },
+  "ueM0Passed": false,
+  "windowsLaunchTested": false,
+  "artLockPassed": false,
+  "tierPerformance": "unmeasured",
+  "sourceArchiveSha256": "70b4fed643006455a578892081db1208798edf4fdb0dd541f3b6d3d835379700"
+}
