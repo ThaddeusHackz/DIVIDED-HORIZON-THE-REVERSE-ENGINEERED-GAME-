@@ -28,7 +28,8 @@
     "slice:package-source": "python3 tools/slice/package.py --source-only",
     "build:preflight": "python3 tools/build/preflight.py",
     "test:preflight": "python3 -m unittest discover -s tests -p 'test_preflight.py'",
-    "test:asset-review": "node tests/asset-review-browser.mjs"
+    "test:asset-review": "node tests/asset-review-browser.mjs",
+    "test:package": "python3 -m unittest discover -s tests -p 'test_windows_package.py'"
   },
   "dependencies": {
     "three": "0.180.0"

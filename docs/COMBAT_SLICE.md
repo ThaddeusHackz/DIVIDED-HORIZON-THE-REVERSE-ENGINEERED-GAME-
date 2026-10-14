@@ -1,12 +1,16 @@
-# DIVIDED HORIZON — La Aduana combat slice 0.3
+# DIVIDED HORIZON — La Aduana combat slice 0.3.1
 
 **This is an unfinished playable slice, not the full game.**
 
 This delivery adds actual combat and a compiled Windows x64 executable. It follows the master brief's §133.3(c) fallback: an explicitly labeled interim slice alongside the UE5 source foundation. **Unreal remains the final production target. This executable uses raylib, not Unreal.**
 
+## Maintenance release 0.3.1
+
+Refreshed Windows packaging, version label, build provenance and integrity checks. No new gameplay or final-art milestone is claimed. See [Windows player guide](WINDOWS_PLAY.md).
+
 ## Play on Windows
 
-1. Download `DIVIDED_HORIZON_Windows_Combat_Slice_0.3.zip`.
+1. Download `DIVIDED_HORIZON_Windows_Combat_Slice_0.3.1.zip`.
 2. Extract the **entire ZIP** to a folder. Do not run the executable inside the ZIP preview.
 3. Run `DividedHorizon-Slice.exe`. Keep `assets/` alongside it.
 4. Choose **Begin operation**, or continue a saved checkpoint.

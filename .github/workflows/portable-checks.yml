@@ -21,6 +21,7 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run test:preflight
+      - run: npm run test:package
       - run: npm run assets:validate
       - run: npm run slice:validate
       - run: npm run build

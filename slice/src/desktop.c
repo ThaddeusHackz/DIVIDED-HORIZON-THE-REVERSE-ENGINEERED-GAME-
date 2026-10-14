@@ -7,6 +7,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+#ifndef DH_SLICE_VERSION
+#define DH_SLICE_VERSION "development"
+#endif
+
 #define W 1280
 #define H 800
 #define PI_F 3.14159265358979323846f
@@ -49,7 +53,7 @@ static void hud(float scale){int width=GetScreenWidth(),height=GetScreenHeight()
  DrawText("WASD move | Shift sprint | Ctrl crouch | Space jump | Mouse / F fire | Right-click aim | R reload | E interact",250,height-28,12,CREAM);
  if(message_time>0){int size=15;int tw=MeasureText(message,size);if(tw>width-80)size=12;DrawRectangle(25,height-170,width-50,40,Fade(INK,.85f));DrawText(message,40,height-158,size,CREAM);}
  if(hurt>0)DrawRectangleLinesEx((Rectangle){0,0,(float)width,(float)height},8,Fade((Color){151,67,43,255},hurt));}
-static void menu(void){int width=GetScreenWidth(),height=GetScreenHeight();float x=width*.075f,y=height*.18f;DrawRectangleGradientH(0,0,(int)(width*.75f),height,(Color){23,46,35,249},(Color){24,46,32,15});DrawText("DIVIDED HORIZON",(int)x,35,24,CREAM);DrawText("COMBAT SLICE 0.3 / NOT THE FINISHED GAME",width-380,40,11,DH_GOLD);DrawText("ACT I / ISLA SOMBRA",(int)x,(int)y,13,DH_GOLD);DrawText("Follow the",(int)x,(int)y+42,52,CREAM);DrawText("paper trail.",(int)x,(int)y+99,52,DH_GOLD);DrawText("Infiltrate La Aduana. Recover the records.",(int)x,(int)y+176,17,CREAM);DrawText("Silence the signal before backup arrives.",(int)x,(int)y+202,17,CREAM);
+static void menu(void){int width=GetScreenWidth(),height=GetScreenHeight();float x=width*.075f,y=height*.18f;DrawRectangleGradientH(0,0,(int)(width*.75f),height,(Color){23,46,35,249},(Color){24,46,32,15});DrawText("DIVIDED HORIZON",(int)x,35,24,CREAM);DrawText("COMBAT SLICE " DH_SLICE_VERSION " / NOT THE FINISHED GAME",width-380,40,11,DH_GOLD);DrawText("ACT I / ISLA SOMBRA",(int)x,(int)y,13,DH_GOLD);DrawText("Follow the",(int)x,(int)y+42,52,CREAM);DrawText("paper trail.",(int)x,(int)y+99,52,DH_GOLD);DrawText("Infiltrate La Aduana. Recover the records.",(int)x,(int)y+176,17,CREAM);DrawText("Silence the signal before backup arrives.",(int)x,(int)y+202,17,CREAM);
  float by=y+250;if(button((Rectangle){x,by,360,45},difficulty?"DIFFICULTY: STANDARD":"DIFFICULTY: STORY",0,1))difficulty=!difficulty;
  if(button((Rectangle){x,by+55,360,48},"Begin operation   >",1,1)||IsKeyPressed(KEY_ENTER))begin(0);
  if(button((Rectangle){x,by+113,360,45},"Continue checkpoint   >",0,FileExists(save_path)))begin(1);
@@ -64,7 +68,7 @@ static void paused_menu(void){int width=GetScreenWidth(),height=GetScreenHeight(
  if(button((Rectangle){x+28,y+319,424,43},sound_on?"Sound effects: ON":"Sound effects: OFF",0,audio_ready))sound_on=!sound_on;
  DrawText("Esc resumes a paused operation. Alt+F4 exits.",(int)x+28,(int)y+382,13,CREAM);}
 static int self_test(void){dh_new(1);int ok=dh_get(7)==12&&dh_get(5)==100;dh_input(0,0,0,0,DH_FIRE);dh_tick(1/60.f);ok=ok&&dh_get(7)==11;int size=dh_save();ok=ok&&dh_load(size);FILE*f=fopen("self-test.txt","w");if(f){fprintf(f,"Shared simulation: %s\nThis diagnostic does NOT test window creation, GPU rendering, audio or gameplay on the display.\n",ok?"PASS":"FAIL");fclose(f);}return ok?0:1;}
-int main(int argc,char**argv){ChangeDirectory(GetApplicationDirectory());if(argc>1&&strcmp(argv[1],"--self-test")==0)return self_test();paths();SetConfigFlags(FLAG_WINDOW_RESIZABLE|FLAG_MSAA_4X_HINT);InitWindow(W,H,"DIVIDED HORIZON - La Aduana | Combat Slice 0.3");SetWindowMinSize(1024,720);SetExitKey(KEY_NULL);SetTargetFPS(60);
+int main(int argc,char**argv){ChangeDirectory(GetApplicationDirectory());if(argc>1&&strcmp(argv[1],"--self-test")==0)return self_test();paths();SetConfigFlags(FLAG_WINDOW_RESIZABLE|FLAG_MSAA_4X_HINT);InitWindow(W,H,"DIVIDED HORIZON - La Aduana | Combat Slice " DH_SLICE_VERSION);SetWindowMinSize(1024,720);SetExitKey(KEY_NULL);SetTargetFPS(60);
  if(!FileExists("assets/L_PuertoChico_Combat.glb")){while(!WindowShouldClose()){BeginDrawing();ClearBackground(INK);DrawText("Missing assets. Extract the entire ZIP before running the game.",35,70,22,CREAM);DrawText("Keep the assets folder next to DividedHorizon-Slice.exe.",35,115,18,DH_GOLD);EndDrawing();}CloseWindow();return 2;}
  world=LoadModel("assets/L_PuertoChico_Combat.glb");sentry=LoadModel("assets/SM_Cosecha_Sentry_01.glb");pistol=LoadModel("assets/SM_Culebra_W01.glb");rifle=LoadModel("assets/SM_Libertad_W05.glb");if(world.meshCount<=0||sentry.meshCount<=0||pistol.meshCount<=0||rifle.meshCount<=0){CloseWindow();return 3;}
  Shader shader=LoadShaderFromMemory(vs,fs);shader.locs[SHADER_LOC_MATRIX_MODEL]=GetShaderLocation(shader,"matModel");int eye_loc=GetShaderLocation(shader,"eye");assign_shader(&world,shader);assign_shader(&sentry,shader);assign_shader(&pistol,shader);assign_shader(&rifle,shader);
