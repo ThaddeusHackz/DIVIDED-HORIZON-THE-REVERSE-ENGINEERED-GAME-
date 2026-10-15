@@ -1,6 +1,6 @@
 {
   "version": "0.3.1",
-  "sourceCommit": "0806cd2c05260c777fa2ff4552a2b811a9f4d62b",
+  "sourceCommit": "1c3b7fe633c079f125375d2b434a2a902f4622ad",
   "runtimeInputHashes": {
     "slice/src/core.c": "f570d7b2699e6244d87afb01c35cc26af4de004867f8ad1e7deac7e20eae1d18",
     "slice/src/core.h": "e23da148dc90b93906a7726c1aff3c4da42534a4f39f2324e3459b79ec6a21f6",
@@ -12,7 +12,7 @@
   "engine": "raylib 5.5 fallback slice; NOT Unreal",
   "target": "x86_64-windows-gnu / OpenGL 3.3",
   "bytes": 1145856,
-  "sha256": "48fa2ad4028df7c2fc9d98ba3e8ece1a520d67868a0112af5fd23f16f80a6e9f",
+  "sha256": "7884da0e052cad43596a47b0507024cc65c3c701a6044671eebb0c4861bc902f",
   "systemDLLs": [
     "GDI32.dll",
     "WINMM.dll",
