@@ -70,7 +70,15 @@ for (let x = -180; x <= 180; x += 24) {
 // Cars
 const carMat = new T.MeshStandardMaterial({ color: 0xd94a3a, metalness: 0.6, roughness: 0.3 });
 const cars = [];
-for (let i = 0; i < 40; i++) {
+const playerCar = new T.Mesh(new T.BoxGeometry(4, 1.4, 2), new T.MeshStandardMaterial({ color: 0x3a7bd9, metalness: 0.6, roughness: 0.3 }));
+playerCar.position.set(0, 0.7, 0);
+playerCar.castShadow = true;
+scene.add(playerCar);
+const player = { mesh: playerCar, speed: 0, angle: 0, maxSpeed: 40 };
+const keys = new Set();
+addEventListener('keydown', (e) => keys.add(e.code));
+addEventListener('keyup', (e) => keys.delete(e.code));
+for (let i = 0; i < 39; i++) {
   const car = new T.Mesh(new T.BoxGeometry(4, 1.4, 2), carMat);
   car.position.set((Math.random() - 0.5) * 300, 0.7, (Math.random() - 0.5) * 300);
   car.castShadow = true;
@@ -93,7 +101,7 @@ for (let i = -5; i <= 5; i++) {
 }
 
 const stats = document.getElementById('stats');
-stats.textContent = `${buildingCount} buildings · ${cars.length} vehicles`;
+stats.textContent = `${buildingCount} buildings · ${cars.length + 1} vehicles · WASD to drive the blue car`;
 
 function animate() {
   requestAnimationFrame(animate);
@@ -101,6 +109,20 @@ function animate() {
     if (c.axis === 'x') { c.mesh.position.x += c.speed * c.dir * 0.016; if (Math.abs(c.mesh.position.x) > 190) c.dir *= -1; }
     else { c.mesh.position.z += c.speed * c.dir * 0.016; if (Math.abs(c.mesh.position.z) > 190) c.dir *= -1; }
   }
+  // player car
+  if (keys.has('KeyW')) player.speed = Math.min(player.maxSpeed, player.speed + 0.8);
+  else if (keys.has('KeyS')) player.speed = Math.max(-player.maxSpeed * 0.5, player.speed - 0.8);
+  else player.speed *= 0.96;
+  if (keys.has('KeyA')) player.angle += 0.03 * (Math.abs(player.speed) / player.maxSpeed + 0.3);
+  if (keys.has('KeyD')) player.angle -= 0.03 * (Math.abs(player.speed) / player.maxSpeed + 0.3);
+  player.mesh.position.x += Math.sin(player.angle) * player.speed * 0.016;
+  player.mesh.position.z += Math.cos(player.angle) * player.speed * 0.016;
+  player.mesh.rotation.y = player.angle;
+  camera.position.x = player.mesh.position.x - Math.sin(player.angle) * 18;
+  camera.position.z = player.mesh.position.z - Math.cos(player.angle) * 18;
+  camera.position.y = 12;
+  camera.lookAt(player.mesh.position);
+  controls.target.copy(player.mesh.position);
   controls.update();
   renderer.render(scene, camera);
 }
