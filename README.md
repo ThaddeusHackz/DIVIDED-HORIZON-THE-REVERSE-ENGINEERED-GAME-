@@ -1,4 +1,15 @@
-# DIVIDED HORIZON — Playable Combat Slice 0.3
+# DIVIDED HORIZON — Playable Combat Slice 0.3 
+### A first-person combat prototype with a browser-playable slice
+
+Play La Aduana: a compact mission featuring enemy patrols,
+stealth and combat, objectives, checkpoints, and extraction.
+
+The prototype shares a C simulation between its browser
+WebAssembly version and Windows raylib fallback. A separate
+Unreal Engine 5 source foundation supports the production direction.
+
+**Status:** prototype in active development—not a finished game
+or a verified Unreal shipping build.
 
 **The full game is not finished.** This repository now contains a playable combat slice, original 3D assets, a compiled Windows fallback build pipeline, and a separate UE5 source foundation.
 
